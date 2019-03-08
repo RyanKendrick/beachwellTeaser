@@ -1,0 +1,73 @@
+[debug] [2019-02-01T22:48:52.605Z] ----------------------------------------------------------------------
+[debug] [2019-02-01T22:48:52.608Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-02-01T22:48:52.608Z] CLI Version:   6.0.1
+[debug] [2019-02-01T22:48:52.608Z] Platform:      darwin
+[debug] [2019-02-01T22:48:52.608Z] Node Version:  v8.10.0
+[debug] [2019-02-01T22:48:52.609Z] Time:          Fri Feb 01 2019 17:48:52 GMT-0500 (EST)
+[debug] [2019-02-01T22:48:52.609Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-01T22:48:52.625Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-01T22:48:52.625Z] > authorizing via signed-in user
+[debug] [2019-02-01T22:48:52.625Z] [iam] checking project torontobeach-44284 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2019-02-01T22:48:52.627Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-02-01T22:48:52.627Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-02-01T22:48:54.997Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-01T22:48:55.042Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/torontobeach-44284:testIamPermissions  
+
+[debug] [2019-02-01T22:48:55.434Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-01T22:48:55.435Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/torontobeach-44284  
+ 
+[debug] [2019-02-01T22:48:56.729Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'torontobeach-44284'...
+[info] 
+[info] i  deploying database, functions, hosting
+[info] i  database: checking rules syntax...
+[debug] [2019-02-01T22:49:29.231Z] >>> HTTP REQUEST PUT https://torontobeach-44284.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+
+[debug] [2019-02-01T22:49:30.728Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules syntax for database torontobeach-44284 is valid
+[debug] [2019-02-01T22:49:30.731Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "firebase-admin": "~6.0.0",
+    "firebase-functions": "^2.1.0"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2019-02-01T22:49:30.732Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/torontobeach-44284?view=CONSUMER_VIEW  
+ 
+[debug] [2019-02-01T22:49:30.733Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/torontobeach-44284?view=CONSUMER_VIEW  
+ 
+[debug] [2019-02-01T22:49:32.215Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-01T22:49:32.242Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2019-02-01T22:49:32.243Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/torontobeach-44284  
+ 
+[debug] [2019-02-01T22:49:32.960Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-01T22:49:32.961Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/671324290931:getServerAppConfig  
+ 
+[debug] [2019-02-01T22:49:33.188Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-01T22:49:33.190Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/torontobeach-44284/versions  
+
+[debug] [2019-02-01T22:50:03.198Z] Error: getaddrinfo ENOTFOUND firebasehosting.googleapis.com firebasehosting.googleapis.com:443
+    at errnoException (dns.js:50:10)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:92:26)
+[error] 
+[error] Error: Server Error. getaddrinfo ENOTFOUND firebasehosting.googleapis.com firebasehosting.googleapis.com:443

@@ -1,0 +1,218 @@
+.App {
+  text-align: center;
+  color: white;
+  overflow-x: hidden;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.entire-page {
+  background-color: #2342A2;
+  /* height: 400rem; */
+}
+
+.splash-right {
+  background-color: #2342A2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  position: static;
+  /* width: 50%; */
+  margin-left: auto;
+  padding-left: 26em;
+}
+
+.mg-left {
+  margin-left: 3rem
+}
+
+.splash-left {
+  background-color: white;
+  font-size: 3rem;
+  width: 10px;
+  height: 10px;
+  display: flex;
+
+  color: black;
+  position: absolute;
+  min-height: 100vh;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-right: auto;  */
+}
+
+.header-text-block {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.header-text-block-2 {
+  display: flex;
+  justify-content: left;
+  text-align: center;
+  color: black;
+  padding-top: 200px;
+  padding-left: 70px;
+  /* font-size: 7rem; */
+  /* background-color: red; */
+}
+
+.header-copy {
+  display: flex;
+  font-size: 2.7rem;
+  color: #2342A2;
+  text-align: left;
+  padding-bottom: 25px;
+  font-family:"proxima-soft";
+  font-weight: 600;
+  line-height: 1.2em;
+  /* position: absolute; */
+}
+.subheader-copy {
+  color: #626262;
+  display: flex;
+  /* position: absolute; */
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  width: 80%;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.form {
+  display: flex;
+  align-content: flex-start;
+}
+
+.sub-subheader-copy {
+  text-align: left;
+  font-size: 1.8rem;
+  color: #626262;
+  padding-bottom: 25px;
+  font-family: helvetica;
+  line-height: 1.5em;
+}
+
+.subheader-description {
+  text-align: left;
+  font-size: 1.4rem;
+  color: #626262;
+  padding-bottom: 25px;
+  font-family: helvetica;
+  line-height: 1.5em;
+}
+
+.splash-image {
+  object-fit: cover;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.iphone-mockup {
+  height: 640px;
+  position: fixed;
+  float: right;
+  /* display: flex; */
+}
+.red {
+  background-color: white;
+}
+
+.long-text-block {
+  width: 29rem;
+  text-align: left;
+}
+
+
+.block-2 {
+  /* background-color: red; */
+  /* color: black; */
+  /* font-size: 2rem; */
+  background-color: white;
+  width: 50%;
+  height: 10px;
+  display: flex;
+  /* position: absolute; */
+  min-height: 100vh;
+  /* justify-content: center; */
+}
+
+.block {
+  background-color: red;
+}
+
+.form-input {
+  height: 20px;
+  width: 270px;
+  font-size: 16px;
+  padding: 7px;
+  padding-left: 15px;
+  color: #969696;
+  outline: none;
+}
+
+.form-input:hover {
+  height: 20px;
+  width: 270px;
+  font-size: 16px;
+  padding: 7px;
+  padding-left: 15px;
+  color: #969696;
+  outline: none;
+  cursor: text;
+}
+
+.submit {
+  border-radius: 25px;
+  width:130px;
+  margin-left: 20px;
+  background-color: #2342A2;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "proxima-soft";
+  box-shadow: 2px 5px 10px #d1d1d1;
+}
+
+.submit:hover {
+  border-radius: 25px;
+  width:130px;
+  margin-left: 20px;
+  background-color: #2342A2;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "proxima-soft";
+  box-shadow: 2px 5px 10px #adadad;
+  cursor: pointer;
+}
+
+
+.beachwell-logo {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  float: left;
+  border: none;
+}
